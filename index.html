@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Adorable Invasion</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="javascript.js"></script> 
+        
+    </head>
+    <body>
+        <div class="instructions">
+            <p class="greeting">These beautiful creatures have come in peace to explore your planet. But as they multiplied, resources became sparse and they went from curious to aggressive.
+            </p>
+            <h4>Instructions:</h4>
+            <ul>
+                    <li>Click on "<span class="italics">Change scenery</span>" button to travel to a random new place</li>
+                    <li>Click on a drop down menu to choose between different kinds of aliens</li>
+                    <li>Click on the alien 5 times and "<span class="italics">Begin invasion</span>" button will appear </li>
+                    <li>Click on the "<span class="italics">Begin invasion</span>" button and defeat all spawn (<span class="bold">click on them </span>furiously ^^) before time runs out! <ul>
+                    <li>If it's too hard, click on "<span class="italics">Save me!</span>" button to try again the same level</li>
+                    <li><span class="bold">If you win, choose new species to begin next level</span></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button id="begin">OK!</button>
+            </div>
+        <button class="scenery" type="button">Change scenery</button>
+        <p class="timer"></p>
+
+        <button class="invasion" type="button">Begin invasion!</button>
+        <button class="restart">Restart</button>
+        <button class="safety" type="button">Save me!</button>
+    	
+        	<select name="species" id ="species" autocomplete="off">
+    	        <option value="aqualine">Aqualine</option>
+    	        <option value="duskpin">Duskpin</option>
+    	        <option value="leafers" selected>Leafers</option>
+    	        <option value="piceratops">Piceratops</option>
+    	        <option value="primosaur">Primosaur</option>
+    	        <option value="starky">Starky</option>
+        	</select>
+        
+        <img src="https://www.kasandbox.org/programming-images/landscapes/sand-dunes.png" id="scenery">
+
+        <img src="https://www.kasandbox.org/programming-images/avatars/leafers-ultimate.png" id="leafers">
+        <div class="bubble">
+            <p id="threat">Poke me to call my children.</p>
+        </div>
+        <div class="spot"></div>
+        <div class="small-spot"></div>
+
+        <div class="lvl-finished">
+        	<p>Level <span id="lvl-finished"></span> finished</p>
+        </div>
+        <div class="won">
+        	<p>"Congratulations! <br> Your planet is free of the menace!</p>
+        </div>
+        <div class="lost">
+        	<p>
+        			Game over! <br> You have scored <span class="total"></span> points!
+        	</p>
+        </div>
+        <div class="score"><p>You have scored <span class="total"></span> points!</p></div>
+    </body>
+</html>
