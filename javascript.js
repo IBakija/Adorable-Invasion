@@ -56,7 +56,6 @@ function main() {
 	        }
 	            safeCall === false;
 	            if ($(".safety").is(":visible") ) {
-	                console.log("No more surprise attacks!");
 	            } else if(clickCount >= 5 ) {
 
 	                $(".safety").hide();
@@ -74,7 +73,6 @@ function main() {
 	        var win = function (func) {
 	        	landscapes.push(checker);
 	        	scenery();
-	            console.log("I am running now");
 	            $(".bubble p").text("We will be back...");
 	            $("#leafers").fadeOut(2000);
 	            $(".bubble").fadeOut(3000);
@@ -117,7 +115,7 @@ function main() {
 	            }
 	        };
 
-	//Invasion begins! Show hidden leaflets + add "quantity" more, change to s"ave me"
+	//Invasion begins! Show hidden leaflets + add "quantity" more, change to "save me", 
 	        var counter;
 	        $(".invasion").on("click", function(event) {
 	        	hideCount = 0;
@@ -140,13 +138,11 @@ function main() {
 	                    $(".timer").text(counter);
 
 	                    if(hideCount >= invade ) {
-	                        console.log("You have won!");
 	                        win(newSpecies);
 	                        clearInterval(interval);
 	                        }
 	                    if(counter === 5) {
 	                        $(".timer").css("color", "rgb(207, 35, 35)");        
-	                        console.log("Almost done");
 
 	                    } 
 	                    else if (counter === 0) {
@@ -161,7 +157,6 @@ function main() {
 	                        win(newSpecies);
 	                    }
 	                        
-	                        console.log("The Final Countdown");
 	                        clearInterval(interval);
 	                    }
 	                }, 1000);
@@ -268,7 +263,6 @@ function main() {
 	            	} else if(option === 0) {
 	                   recovery();
 	            	}  else {
-		                console.log("Nothing happens");
 		                $(".bubble").show();
 		                    $(".spot").show();
 		                    $(".small-spot").show();
@@ -277,17 +271,14 @@ function main() {
 	//change saplings
 		            source.src="https://www.kasandbox.org/programming-images/avatars/starky-sapling.png";
 		            $(".leaflets").attr("src","https://www.kasandbox.org/programming-images/avatars/starky-sapling.png");
-		            console.log("you chose starky!");
 		        } else  if ($species === "aqualine") {
 		             $("#leafers").attr("src","https://www.kasandbox.org/programming-images/avatars/aqualine-ultimate.png");
 		             if($(".safety").is(":visible")) {
-		                console.log("Run");
 		                } else if (option === 1) {
 		                    find();
 		            } else if(option === 0) {
 		                    recovery();
 		            }  else {
-		                console.log("Nothing happens");
 		                $(".bubble").show();
 		                    $(".spot").show();
 		                    $(".small-spot").show();
@@ -296,17 +287,14 @@ function main() {
 	            //change saplings
 		            source.src="https://www.kasandbox.org/programming-images/avatars/aqualine-sapling.png";
 		            $(".leaflets").attr("src","https://www.kasandbox.org/programming-images/avatars/aqualine-sapling.png");
-		            console.log("you chose aqualine!");
 		        } else if ($species === "piceratops") {
 		            $("#leafers").attr("src","https://www.kasandbox.org/programming-images/avatars/piceratops-ultimate.png");
 		            if($(".safety").is(":visible")) {
-		                console.log("Run");
 		                } else if (option === 1) {
 		                    find();
 		            } else if(option === 0) {
 		                    recovery();
 		            }  else {
-		                console.log("Nothing happens");
 		                $(".bubble").show();
 		                    $(".spot").show();
 		                    $(".small-spot").show();
@@ -315,17 +303,14 @@ function main() {
 	            //change saplings
 	            source.src="https://www.kasandbox.org/programming-images/avatars/piceratops-sapling.png";
 	            $(".leaflets").attr("src","https://www.kasandbox.org/programming-images/avatars/piceratops-sapling.png");
-	            console.log("you chose piceratops!");
 	        } else if ($species === "leafers"){
 	            $("#leafers").attr("src","https://www.kasandbox.org/programming-images/avatars/leafers-ultimate.png");
 	            if($(".safety").is(":visible")) {
-	                console.log("Run");
 	                } else if (option === 1) {
 	                    find();
 	            } else if(option === 0) {
 	                   recovery();
 	            } else {
-	                console.log("Nothing happens");
 	                $(".bubble").show();
 	                    $(".spot").show();
 	                    $(".small-spot").show();
@@ -334,17 +319,14 @@ function main() {
 	                //change saplings
 	                source.src="https://www.kasandbox.org/programming-images/avatars/leafers-sapling.png";
 	            $(".leaflets").attr("src","https://www.kasandbox.org/programming-images/avatars/leafers-sapling.png");
-	             console.log("you chose leafers!");
 	        } else if ($species === "duskpin"){
 	            $("#leafers").attr("src","https://www.kasandbox.org/programming-images/avatars/duskpin-ultimate.png");
 	            if($(".safety").is(":visible")) {
-	                console.log("Run");
 	                } else if (option === 1) {
 	                    find();
 	            } else if(option === 0) {
 	                    recovery();
 	            }  else {
-	                console.log("Nothing happens");
 	                $(".bubble").show();
 	                    $(".spot").show();
 	                    $(".small-spot").show();
@@ -353,8 +335,6 @@ function main() {
 	                //change saplings
 	                source.src="https://www.kasandbox.org/programming-images/avatars/duskpin-sapling.png";
 	            $(".leaflets").attr("src","https://www.kasandbox.org/programming-images/avatars/duskpin-sapling.png");
-	             console.log("you chose duskpin!");
-
 	        } else if ($species === "primosaur"){
 	            $("#leafers").attr("src","https://www.kasandbox.org/programming-images/avatars/primosaur-ultimate.png");
 	            if($(".safety").is(":visible")) {
@@ -363,7 +343,6 @@ function main() {
 	            } else if(option === 0) {
 	                    recovery();
 	            } else {
-	                console.log("Nothing happens");
 	                $(".bubble").show();
 	                    $(".spot").show();
 	                    $(".small-spot").show();
@@ -372,7 +351,6 @@ function main() {
 	                //change saplings
 	                source.src="https://www.kasandbox.org/programming-images/avatars/primosaur-sapling.png";
 	            $(".leaflets").attr("src","https://www.kasandbox.org/programming-images/avatars/primosaur-sapling.png");
-	             console.log("you chose primosaur!");
 	        }
 	       });
 	        
@@ -398,35 +376,27 @@ function main() {
             panorama();  
             if (random === checker || conqueredLand === true) {
             	scenery();
-                console.log("no change! "+ random + " " + checker);
             } else if (random === 0) {
             $("#scenery").attr("src","https://www.kasandbox.org/programming-images/landscapes/lava.png");
-            console.log("area change! " + random + " " + checker);
             checker = 0;
-            
             } else if(random === 1) {
                 $("#scenery").attr("src","https://www.kasandbox.org/programming-images/landscapes/fields-of-wine.png"); 
-                console.log("area change! "+ random + " " + checker);
                 checker = 1;
                 
             } else if(random === 2) {
                 $("#scenery").attr("src","https://www.kasandbox.org/programming-images/landscapes/beach-in-hawaii.png");
-                console.log("area change! "+ random + " " + checker);
                 checker = 2;
                 
             } else if(random === 3){
                 $("#scenery").attr("src","https://www.kasandbox.org/programming-images/landscapes/mountains-sunset.png"); 
-                console.log("area change! "+ random + " " + checker);
                 checker =  3;
                 
             } else if(random === 4){
                 $("#scenery").attr("src","https://www.kasandbox.org/programming-images/landscapes/sand-dunes.png"); 
-                console.log("area change! "+ random + " " + checker);
                 checker = 4;
                 
             }  else {
                 $("#scenery").attr("src","https://www.kasandbox.org/programming-images/landscapes/clouds-from-plane.png"); 
-                console.log("area change! "+ random + " " + checker);
                 checker = 5;
             } 
         };
