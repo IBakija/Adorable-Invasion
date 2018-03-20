@@ -9,3 +9,4 @@ It contains many different functions like:
   - disabling and enabling choices on dropdown menu (not that hard, I know :) ),
   - keeping track of score through the levels and changing difficulty after every won level
 and others. 
+And many others, it is a simple game, really.
