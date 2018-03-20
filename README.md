@@ -10,4 +10,5 @@ It contains many different functions like:
   - keeping track of score through the levels and changing difficulty after every won level. 
 
 And many others. It is a simple game, really.
+
 It will be the best 5 minutes ever! :D
