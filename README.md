@@ -9,4 +9,5 @@ It contains many different functions like:
   - disabling and enabling choices on dropdown menu (not that hard, I know :) ),
   - keeping track of score through the levels and changing difficulty after every won level. 
 
-And many others, it is a simple game, really.
+And many others. It is a simple game, really.
+It will be the best 5 minutes ever! :D
