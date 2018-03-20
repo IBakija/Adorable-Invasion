@@ -7,7 +7,6 @@ It contains many different functions like:
   - randomizing background image on button click with a checker so the same image does not appear twice in a row,
     - also, another function that keeps track of conquered places (scenery) so you can not travel there until the game is won or restarted,
   - disabling and enabling choices on dropdown menu (not that hard, I know :) ),
-  - keeping track of score through the levels and changing difficulty after every won level
-and others. 
+  - keeping track of score through the levels and changing difficulty after every won level. 
 
 And many others, it is a simple game, really.
